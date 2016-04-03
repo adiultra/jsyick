@@ -1,6 +1,6 @@
-# jsyick
-
 ![The Jsyick logo](http://i.imgur.com/gXH4TYw.png)
+
+# jsyick
 
 My js Learning repo
 
