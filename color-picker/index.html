@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Color Picker</title>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>The Great Color picker</h1>
+    <p>The great Color picker.</p>
+
+
+    <div class="palette">
+
+        <table>
+
+            <tr class="colors">
+                <td id="color-1"></td>
+                <td id="color-2"></td>
+                <td id="color-3"></td>
+                <td id="color-4"></td>
+                <td id="color-5"></td>
+            </tr>
+
+            <tr class="input-colors">
+
+                <td>
+                    <input class="jscolor {onFineChange:'update1(this)'}" value="cc66ff">
+                </td>
+
+                <td>
+                    <input class="jscolor {onFineChange:'update2(this)'}" value="cc66ff">
+                </td>
+
+                <td>
+                    <input class="jscolor {onFineChange:'update3(this)'}" value="cc66ff">
+                </td>
+
+                <td>
+                    <input class="jscolor {onFineChange:'update4(this)'}" value="cc66ff">
+                </td>
+
+                <td>
+                    <input class="jscolor {onFineChange:'update5(this)'}" value="cc66ff">
+                </td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <script src="../resources/jscolor/jscolor.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
