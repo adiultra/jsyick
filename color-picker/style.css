@@ -1,23 +1,44 @@
 /* Basic */
 html{
     text-align: center;
+    font-family: Lato, arial, sans-serif;
 }
 
 h1{
-    font-family: Lato;
     font-weight: lighter;
     text-decoration: none;
+    font-size: 8em;
+    padding: 0px;
+    margin: 20px;
 }
 
+p{
+    font-size: 2em;
+    font-weight: 300;
+    padding: 0px;
+    margin: 0px;
+}
+
+span.warn{
+    background-color: #FF5656;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.4em;
+    padding: 0.5%;
+    margin: 4% 0% 0.5% 0%;
+}
 
 
 /* Pallete */
 div.palette{
-    padding: 5%;
+    padding: 3% 0;
 }
 
 .colors, .color-input{
     display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #color-1, #color-2, #color-3, #color-4, #color-5{
