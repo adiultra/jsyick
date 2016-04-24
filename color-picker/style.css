@@ -1,31 +1,6 @@
 /* Basic */
 html{
     text-align: center;
-    font-family: Lato, arial, sans-serif;
-}
-
-h1{
-    font-weight: lighter;
-    text-decoration: none;
-    font-size: 8em;
-    padding: 0px;
-    margin: 20px;
-}
-
-p{
-    font-size: 2em;
-    font-weight: 300;
-    padding: 0px;
-    margin: 0px;
-}
-
-span.warn{
-    background-color: #FF5656;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 1.4em;
-    padding: 0.5%;
-    margin: 4% 0% 0.5% 0%;
 }
 
 

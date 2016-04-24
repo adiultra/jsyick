@@ -1,0 +1,85 @@
+
+// Colors
+
+$blue: #4EBEFF;
+$green: #40D872;
+$red: #FF534B;
+$teal: #53D2B9;
+$cyan: #7DEFFF;
+$orange: #FF9700;
+$yellow: #FCD059;
+$black: #333;
+$white: #fff;
+
+// Pallete
+
+$main: $teal;
+$dark: darken($main, 15%);
+$very-dark: darken($main, 35%);
+$light: lighten($main, 5%);
+$very-light: lighten($main, 15%);
+
+// Greyshade
+$very-light-grey:   darken(mix($main, $white, 10%), 10%);
+$light-grey:        darken(mix($main, $white, 6%), 30%);
+$grey:              darken(mix($main, $white, 6%), 50%);
+$dark-grey:         darken(mix($main, $white, 6%), 60%);
+$very-dark-grey:         darken(mix($main, $white, 6%), 70%);
+
+// Shadows
+
+$light-shadow: rgba(0, 0, 0, 0.2);
+$shadow: rgba(0, 0, 0, 0.4);
+$dark-shadow: rgba(0, 0, 0, 0.6);
+
+
+html{
+    font-size: 2em;
+    font-family: Lato, "Open Sans", "Raleway", sans-serif;
+    color: $very-dark-grey;
+
+    body{
+        padding: 0;
+        margin: 0;
+        header{
+            // Stick the header at top
+            position: sticky;
+            top: 0px;
+
+            background-color: $main;
+            box-shadow: 0px 4px 8px $light-shadow;
+
+            h1{
+                font-size: 1.4em;
+                padding: 8px;
+                margin: 0;
+                color: $white;
+                font-weight: 200;
+            }
+        }
+
+        h1{
+            font-weight: 200;
+            text-decoration: none;
+            font-size: 3em;
+            padding: 0px;
+            margin: 20px;
+        }
+
+        p{
+            font-size: 1.5em;
+            font-weight: 200;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        span.warn{
+            background-color: $red;
+            color: $white;
+            border-radius: 5px;
+            font-size: 1em;
+            padding: 0.5%;
+            margin: 4% 0% 0.5% 0%;
+        }
+    }
+}
