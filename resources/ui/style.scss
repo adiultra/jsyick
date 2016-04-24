@@ -1,36 +1,42 @@
 
+// TODO :
+//  -> [ ] Edit p
+//  -> [ ]
+//
+//
+
 // Colors
 
-$blue: #4EBEFF;
-$green: #40D872;
-$red: #FF534B;
-$teal: #53D2B9;
-$cyan: #7DEFFF;
-$orange: #FF9700;
-$yellow: #FCD059;
-$black: #333;
-$white: #fff;
+$blue:      #4EBEFF;
+$green:     #40D872;
+$red:       #FF534B;
+$teal:      #53D2B9;
+$cyan:      #7DEFFF;
+$orange:    #FF9700;
+$yellow:    #FCD059;
+$black:     #333333;
+$white:     #ffffff;
 
 // Pallete
 
-$main: $teal;
-$dark: darken($main, 15%);
-$very-dark: darken($main, 35%);
-$light: lighten($main, 5%);
-$very-light: lighten($main, 15%);
+$main:          $teal;
+$dark:          darken($main, 15%);
+$very-dark:     darken($main, 35%);
+$light:         lighten($main, 5%);
+$very-light:    lighten($main, 15%);
 
 // Greyshade
-$very-light-grey:   darken(mix($main, $white, 10%), 10%);
+$very-light-grey:   darken(mix($main, $white, 6%), 10%);
 $light-grey:        darken(mix($main, $white, 6%), 30%);
 $grey:              darken(mix($main, $white, 6%), 50%);
 $dark-grey:         darken(mix($main, $white, 6%), 60%);
-$very-dark-grey:         darken(mix($main, $white, 6%), 70%);
+$very-dark-grey:    darken(mix($main, $white, 6%), 70%);
 
 // Shadows
 
-$light-shadow: rgba(0, 0, 0, 0.2);
-$shadow: rgba(0, 0, 0, 0.4);
-$dark-shadow: rgba(0, 0, 0, 0.6);
+$light-shadow:      rgba(0, 0, 0, 0.2);
+$shadow:            rgba(0, 0, 0, 0.4);
+$dark-shadow:       rgba(0, 0, 0, 0.6);
 
 
 html{
@@ -52,34 +58,53 @@ html{
             h1{
                 font-size: 1.4em;
                 padding: 8px;
-                margin: 0;
+                margin: 0 0 0 2em;
                 color: $white;
                 font-weight: 200;
             }
         }
 
-        h1{
-            font-weight: 200;
-            text-decoration: none;
-            font-size: 3em;
-            padding: 0px;
-            margin: 20px;
-        }
+        .page{
 
-        p{
-            font-size: 1.5em;
-            font-weight: 200;
-            padding: 0px;
-            margin: 0px;
-        }
+            padding: 0 20%;
 
-        span.warn{
-            background-color: $red;
-            color: $white;
-            border-radius: 5px;
-            font-size: 1em;
-            padding: 0.5%;
-            margin: 4% 0% 0.5% 0%;
+            .center{
+                text-align: center;
+            }
+
+            h1{
+                font-weight: 200;
+                text-decoration: none;
+                font-size: 3em;
+                padding: 0px;
+                margin: 20px;
+            }
+
+            h2{
+                font-size: 1.5em;
+                font-weight: 200;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            p{
+
+            }
+
+            span.warn{
+                transition: 0.3s;
+                background-color: $red;
+                color: $white;
+                border-radius: 6px;
+                font-size: 0.8em;
+                font-weight: 300;
+                padding: 0.8%;
+                margin: 4% 0% 0.5% 0%;
+
+                &:hover{
+                    box-shadow: 0px 2px 6px $light-shadow;
+                }
+            }
         }
     }
 }
