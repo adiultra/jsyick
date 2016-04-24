@@ -1,0 +1,47 @@
+html {
+  font-size: 2em;
+  font-family: Lato, "Open Sans", "Raleway", sans-serif;
+  color: #206c61; }
+  html body {
+    padding: 0;
+    margin: 0; }
+    html body header {
+      position: sticky;
+      top: 0px;
+      background-color: #53D2B9;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
+      html body header h1 {
+        font-size: 1.4em;
+        padding: 8px;
+        margin: 0 0 0 2em;
+        color: #ffffff;
+        font-weight: 200; }
+    html body .page {
+      padding: 0 24%; }
+      html body .page .center {
+        text-align: center; }
+      html body .page h1 {
+        font-weight: 200;
+        text-decoration: none;
+        font-size: 3em;
+        padding: 0px;
+        margin: 20px; }
+      html body .page h2 {
+        font-size: 1.5em;
+        font-weight: 200;
+        padding: 0px; }
+      html body .page p {
+        font-size: 0.8em;
+        text-align: justify;
+        font-weight: 300; }
+      html body .page .warn {
+        transition: 0.3s;
+        background-color: #FF534B;
+        color: #ffffff;
+        border-radius: 6px;
+        font-size: 0.8em;
+        font-weight: 300;
+        padding: 0.8%;
+        margin: 4% 0% 0.5% 0%; }
+        html body .page .warn:hover {
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); }
