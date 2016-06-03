@@ -1,20 +1,20 @@
 html {
   font-size: 2em;
   font-family: Lato, "Open Sans", "Raleway", sans-serif;
-  color: #1a1a1a; }
+  color: #22333c; }
   html body {
     padding: 0;
     margin: 0; }
     html body header {
       position: sticky;
       top: 0px;
-      background-color: #FF534B;
+      background-color: #4EBEFF;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
       html body header h1 {
         font-size: 1.4em;
         padding: 8px;
         margin: 0 0 0 2em;
-        color: #f4dad9;
+        color: #d9eaf4;
         font-weight: 300; }
     html body .page {
       padding: 0 24% 5% 24%; }
@@ -52,21 +52,21 @@ html {
         line-height: 1.6;
         text-indent: 1em; }
       html body .page button {
-        background-color: #FF534B;
+        background-color: #4EBEFF;
         color: #ffffff;
         border: none;
         border-radius: 6px;
         font-size: 0.8em;
         font-weight: 300;
         padding: 0.8%;
-        margin: 4% 0% 0.5% 0%;
+        margin: 4% 1% 0.5% 1%;
         transition: all 0.2s; }
         html body .page button:hover {
           box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4); }
         html body .page button:active {
           box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.4); }
         html body .page button.secondary {
-          background-color: #ff847e; }
+          background-color: #81d1ff; }
       html body .page .warn {
         transition: 0.3s;
         background-color: #FF534B;

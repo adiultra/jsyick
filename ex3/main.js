@@ -14,6 +14,11 @@ function decrement() {
     document.getElementById('number').innerHTML = i;
 }
 
+function reset() {
+    i = 0;
+    document.getElementById('number').innerHTML = i;
+}
+
 $(document).ready(function() {
     'use strict';
 
