@@ -2,7 +2,6 @@
 // TODO :
 //  -> [x] Edit p
 //  -> [ ] Style Button
-//
 
 // Colors
 
@@ -13,23 +12,30 @@ $teal:      #53D2B9;
 $cyan:      #7DEFFF;
 $orange:    #FF9700;
 $yellow:    #FCD059;
-$black:     #333333;
+$black:     #222222;
 $white:     #ffffff;
 
 // Pallete
 
-$main:          $teal;
-$dark:          darken($main, 15%);
-$very-dark:     darken($main, 35%);
-$light:         lighten($main, 5%);
-$very-light:    lighten($main, 15%);
+$main:          $red;
+$main-light:    lighten($main, 10%);
+$main-dark:     darken($main, 20%);
 
 // Greyshade
-$very-light-grey:   darken(mix($main, $white, 6%), 10%);
-$light-grey:        darken(mix($main, $white, 6%), 30%);
-$grey:              darken(mix($main, $white, 6%), 50%);
-$dark-grey:         darken(mix($main, $white, 6%), 60%);
-$very-dark-grey:    darken(mix($main, $white, 6%), 70%);
+$very-light-grey:   darken($white, 5%);
+$light-grey:        darken($white, 25%);
+$grey:              darken($white, 50%);
+$dark-grey:         darken($white, 75%);
+$very-dark-grey:    darken($white, 90%);
+
+// Tints
+
+$tint-very-light-grey:   mix($very-light-grey, $main, 85%);
+$tint-light-grey:        mix($light-grey, $main, 85%);
+$tint-grey:              mix($grey, $main, 85%);
+$tint-dark-grey:         mix($dark-grey, $main, 85%);
+$tint-very-dark-grey:    mix($very-dark-grey, $main, 85%);
+
 
 // Shadows
 
@@ -46,6 +52,7 @@ html{
     body{
         padding: 0;
         margin: 0;
+
         header{
             // Stick the header at top
             position: sticky;
@@ -58,14 +65,33 @@ html{
                 font-size: 1.4em;
                 padding: 8px;
                 margin: 0 0 0 2em;
-                color: $white;
-                font-weight: 200;
+                color: $tint-very-light-grey;
+                font-weight: 300;
             }
         }
 
         .page{
 
-            padding: 0 24%;
+            padding: 0 24% 5% 24%;
+
+            header{
+                margin-top: 2em;
+                position: initial;
+                top: auto;
+                text-align: center;
+
+                background: none;
+                box-shadow: none;
+
+                h1{
+                    font-weight: 200;
+                    text-decoration: none;
+                    font-size: 3em;
+                    padding: 0px;
+                    margin: 20px;
+                    color: $very-dark-grey;
+                }
+            }
 
             .center{
                 text-align: center;
@@ -74,7 +100,7 @@ html{
             h1{
                 font-weight: 200;
                 text-decoration: none;
-                font-size: 3em;
+                font-size: 2em;
                 padding: 0px;
                 margin: 20px;
             }
@@ -86,13 +112,36 @@ html{
             }
 
             p{
-                font-size: 0.8em;
+                font-family: "Roboto Slab";
+                font-size: 0.75em;
                 text-align: justify;
-                font-weight: 300;
+                font-weight: lighter;
+                line-height: 1.6;
+                text-indent: 1em;
             }
 
             button{
+                background-color: $main;
+                color: $white;
+                border: none;
+                border-radius: 6px;
+                font-size: 0.8em;
+                font-weight: 300;
+                padding: 0.8%;
+                margin: 4% 0% 0.5% 0%;
+                transition: all 0.2s;
 
+                &:hover{
+                    box-shadow: 0px 3px 10px $shadow;
+                }
+
+                &:active{
+                    box-shadow: 0px 5px 12px $shadow;
+                }
+                
+                &.secondary{
+                    background-color: $main-light;
+                }
             }
 
 

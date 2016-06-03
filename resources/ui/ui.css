@@ -1,29 +1,43 @@
 html {
   font-size: 2em;
   font-family: Lato, "Open Sans", "Raleway", sans-serif;
-  color: #206c61; }
+  color: #1a1a1a; }
   html body {
     padding: 0;
     margin: 0; }
     html body header {
       position: sticky;
       top: 0px;
-      background-color: #53D2B9;
+      background-color: #FF534B;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
       html body header h1 {
         font-size: 1.4em;
         padding: 8px;
         margin: 0 0 0 2em;
-        color: #ffffff;
-        font-weight: 200; }
+        color: #f4dad9;
+        font-weight: 300; }
     html body .page {
-      padding: 0 24%; }
+      padding: 0 24% 5% 24%; }
+      html body .page header {
+        margin-top: 2em;
+        position: initial;
+        top: auto;
+        text-align: center;
+        background: none;
+        box-shadow: none; }
+        html body .page header h1 {
+          font-weight: 200;
+          text-decoration: none;
+          font-size: 3em;
+          padding: 0px;
+          margin: 20px;
+          color: #1a1a1a; }
       html body .page .center {
         text-align: center; }
       html body .page h1 {
         font-weight: 200;
         text-decoration: none;
-        font-size: 3em;
+        font-size: 2em;
         padding: 0px;
         margin: 20px; }
       html body .page h2 {
@@ -31,9 +45,28 @@ html {
         font-weight: 200;
         padding: 0px; }
       html body .page p {
-        font-size: 0.8em;
+        font-family: "Roboto Slab";
+        font-size: 0.75em;
         text-align: justify;
-        font-weight: 300; }
+        font-weight: lighter;
+        line-height: 1.6;
+        text-indent: 1em; }
+      html body .page button {
+        background-color: #FF534B;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        font-size: 0.8em;
+        font-weight: 300;
+        padding: 0.8%;
+        margin: 4% 0% 0.5% 0%;
+        transition: all 0.2s; }
+        html body .page button:hover {
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4); }
+        html body .page button:active {
+          box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.4); }
+        html body .page button.secondary {
+          background-color: #ff847e; }
       html body .page .warn {
         transition: 0.3s;
         background-color: #FF534B;
