@@ -1,20 +1,20 @@
 html {
   font-size: 2em;
   font-family: Lato, "Open Sans", "Raleway", sans-serif;
-  color: #22333c; }
+  color: #384d5c; }
   html body {
     padding: 0;
     margin: 0; }
     html body header {
       position: sticky;
       top: 0px;
-      background-color: #4EBEFF;
+      background-color: #59c0b7;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
       html body header h1 {
         font-size: 1.4em;
         padding: 8px;
         margin: 0 0 0 2em;
-        color: #d9eaf4;
+        color: #bddbd0;
         font-weight: 300; }
     html body .page {
       padding: 0 24% 5% 24%; }
@@ -31,7 +31,7 @@ html {
           font-size: 3em;
           padding: 0px;
           margin: 20px;
-          color: #1a1a1a; }
+          color: #394c5b; }
       html body .page .center {
         text-align: center; }
       html body .page h1 {
@@ -52,8 +52,8 @@ html {
         line-height: 1.6;
         text-indent: 1em; }
       html body .page button {
-        background-color: #4EBEFF;
-        color: #ffffff;
+        background-color: #f26663;
+        color: #f1f5ef;
         border: none;
         border-radius: 6px;
         font-size: 0.8em;
@@ -66,11 +66,14 @@ html {
         html body .page button:active {
           box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.4); }
         html body .page button.secondary {
-          background-color: #81d1ff; }
+          background-color: #fa757a; }
+        html body .page button img.icon {
+          height: 100%;
+          width: 100%; }
       html body .page .warn {
         transition: 0.3s;
-        background-color: #FF534B;
-        color: #ffffff;
+        background-color: #f26663;
+        color: #f1f5ef;
         border-radius: 6px;
         font-size: 0.8em;
         font-weight: 300;

@@ -3,6 +3,10 @@ html{
     text-align: center;
 }
 
+header{
+    text-align: left;
+}
+
 
 /* Pallete */
 div.palette{

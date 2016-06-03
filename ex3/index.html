@@ -6,6 +6,7 @@
 
     <meta charset="UTF-8">
 
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../resources/ui/ui.css" />
     <link rel="stylesheet" href="main.css"  />
 </head>
@@ -13,15 +14,19 @@
 <body>
 
     <header>
-        <h1>So Cool</h1>
+        <h1>So Cool <i class="icon ion-ios-infinite-outline"></i></h1>
     </header>
 
     <div class="page">
-        <h1>My first application!</h1>
+        <h1>My first application! <i class="icon ion-aperture"></i></h1>
         <button onclick="displayText('Clicked')">Klick Me</button>
         <p id="para">Welcome to <i>Learning JavaScript, 3rd Edition</i>.</p>
 
-        <button type="button" name="button" onclick="increment()">+</button><i id="number"></i><button type="button" name="button" onclick="decrement()">-</button> <button type="button" class="secondary" name="button" onclick="reset()">Reset</button>
+        <button type="button" name="button" onclick="increment()"><i class="icon ion-android-add"></i></button>
+        <i id="number"></i>
+        <button type="button" name="button" onclick="decrement()"><i class="icon ion-android-remove"></i></button>
+        <button type="button" class="secondary" name="button" onclick="reset()"><i class="icon ion-ios-loop"></i></button>
+
     </div>
 
     <!-- Load JS -->
